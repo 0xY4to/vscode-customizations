@@ -2,33 +2,32 @@
 [
     // VIM NAV
     {
-        "key": "shift+j",
-        "command": "workbench.action.togglePanel"
+        "key": "alt+j",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "shift+a",
+        "key": "alt+a",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "shift+b",
+        "key": "alt+b",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
     {
-        "key": "shift+n",
+        "key": "alt+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus",
     },
     {
-        "key": "shift+k",
+        "key": "alt+k",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
     {
         "key": "ctrl+e",  // Or any other unused combination that suits your workflow.
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "explorerViewletVisible && explorerViewletFocus"
+        "command": "workbench.action.focusActiveEditorGroup"
     },
  
     // FILETREE

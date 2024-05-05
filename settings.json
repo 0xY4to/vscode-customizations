@@ -1,38 +1,250 @@
 {
     "workbench.colorTheme": "Catppuccin Mocha",
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.fontLigatures": false,
-    "editor.fontFamily": "Fira Code Nerd Mono",
     "vim.statusBarColors.visualline": "",
     "editor.minimap.enabled": false,
-    
     // VIM
     "editor.lineNumbers": "relative",
     "vim.leader": "<Space>",
+    "vim.easymotion": true,
     "vim.normalModeKeyBindingsNonRecursive": [
-        // NAV
-        { "before": ["<S-h>"], "commands": [":bprevious"] },
-        { "before": ["<S-l>"], "commands": [":bnext"] },
-
-        { "before": ["leader", "v"], "commands": [":vsplit"]},
-        { "before": ["leader", "s"], "commands": [":split"]},
-
-        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"]},
-        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"]},
-        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"]},
-
-        { "before": ["leader", "e", "f"], "commands": ["workbench.explorer.fileView.focus"] },
-        { "before": ["leader", "e", "e"], "commands": ["workbench.action.toggleSidebarVisibility"] },
-
-        { "before": ["K"], "commands": ["editor.action.showHover"] }
-       
+        // EDITOR ACTIONS
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                ":bprevious"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                ":bnext"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "p"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
+        // EXPLORER
+        {
+            "before": [
+                "leader",
+                "e",
+                "f"
+            ],
+            "commands": [
+                "workbench.explorer.fileView.focus"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "e",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        // WINDOW NAVIGATION
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "right"
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "left"
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "down"
+            ],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "up"
+            ],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        // ACTIVITY BAR
+        {
+            "before": [
+                "leader",
+                "a",
+                "t",
+            ],
+            "commands": [
+                "workbench.action.toggleActivityBarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "a",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
     ],
-
     "vim.visualModeKeyBindings": [
-        { "before": ["<"], "commands": ["editor.action.outdentLines"]},
-        { "before": [">"], "commands": ["editor.action.indentLines"]},
-        { "before": ["j"], "commands": ["editor.action.moveLinesDownAction"]},
-        { "before": ["k"], "commands": ["editor.action.moveLinesUpAction"]},
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
     ],
-    "terminal.integrated.sendKeybindingsToShell": true
+    "terminal.integrated.fontSize": 12,
+    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "workbench.activityBar.location": "hidden"
 }
