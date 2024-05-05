@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaults
+[
+    // VIM NAV
+    {
+        "key": "shift+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+a",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+b",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "shift+k",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+e",  // Or any other unused combination that suits your workflow.
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible && explorerViewletFocus"
+    },
+ 
+    // FILETREE
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.newWindow",
+        "when": "!explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "deleteFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    }
+]

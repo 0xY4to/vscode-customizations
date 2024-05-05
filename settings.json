@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": false,
+    "editor.fontFamily": "Fira Code Nerd Mono",
+    "vim.statusBarColors.visualline": "",
+    "editor.minimap.enabled": false,
+    
+    // VIM
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // NAV
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        { "before": ["leader", "v"], "commands": [":vsplit"]},
+        { "before": ["leader", "s"], "commands": [":split"]},
+
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"]},
+        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"]},
+        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"]},
+
+        { "before": ["leader", "e", "f"], "commands": ["workbench.explorer.fileView.focus"] },
+        { "before": ["leader", "e", "e"], "commands": ["workbench.action.toggleSidebarVisibility"] },
+
+        { "before": ["K"], "commands": ["editor.action.showHover"] }
+       
+    ],
+
+    "vim.visualModeKeyBindings": [
+        { "before": ["<"], "commands": ["editor.action.outdentLines"]},
+        { "before": [">"], "commands": ["editor.action.indentLines"]},
+        { "before": ["j"], "commands": ["editor.action.moveLinesDownAction"]},
+        { "before": ["k"], "commands": ["editor.action.moveLinesUpAction"]},
+    ],
+    "terminal.integrated.sendKeybindingsToShell": true
+}
